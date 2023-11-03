@@ -1,0 +1,104 @@
+@use "@styles/breakpoints" as *;
+
+.sale-card-details-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.sale-card-details {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.sale-card-details__title {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+.sale-card-details__name {
+  font-weight: bold;
+}
+
+.sale-card-details__product-type {
+  font-size: 0.875rem;
+  color: #555555;
+}
+
+.sale-card-details__price-rating {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+.sale-card-details__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.875rem;
+  color: #555555;
+}
+
+.sale-card-details__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 100%;
+
+  & span:first-child {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #ff2e00;
+  }
+
+  & span:nth-child(2) {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #555555;
+    text-decoration: line-through;
+  }
+
+  & span:nth-child(3) {
+    border-radius: 4px;
+    padding: 2px 0.5rem;
+    font-size: 10px;
+    background-color: #ff2e00;
+    color: white;
+  }
+
+  @include tablet {
+    width: initial;
+    gap: 16px;
+  }
+
+  @include desktop {
+    justify-content: initial;
+    align-self: initial;
+  }
+}

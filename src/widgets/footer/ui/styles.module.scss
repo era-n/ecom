@@ -1,0 +1,145 @@
+@use "@styles/breakpoints" as *;
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__mailing {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  text-align: center;
+  background-color: #7296ab;
+  color: white;
+  padding: 2rem 3rem;
+
+  & > p {
+    margin-bottom: 12px;
+  }
+
+  & input {
+    width: 60%;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    color: black;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.footer__nav-wrapper {
+  width: 100%;
+  background-color: #d1e2eb;
+  padding: 3rem 0;
+  font-size: 0.875rem;
+}
+
+.footer__nav {
+  margin: auto;
+  display: grid;
+  width: 80%;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  row-gap: 36px;
+
+  @include tablet {
+    margin-top: 60px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-items: center;
+  }
+}
+
+.footer__nav-links {
+  & ul > li {
+    padding: 0.5rem 0;
+  }
+
+  & div {
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+}
+
+.footer__info {
+  margin: auto;
+  width: 100%;
+  padding: 1.5rem 0 1.25rem 0;
+  mix-blend-mode: luminosity;
+
+  @include tablet {
+    width: 900px;
+  }
+
+  @include desktop {
+    width: 1370px;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 1rem;
+
+  @include tablet {
+    border-bottom: 2px solid #d9d9d9;
+  }
+}
+
+.footer-socials__items {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+}
+
+.footer__lang {
+  display: none;
+  max-height: 17px;
+  align-items: center;
+
+  & img {
+    width: 17px;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.footer-copyright {
+  display: none;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+
+  & > span {
+    flex: 1;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.footer-copyright__items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

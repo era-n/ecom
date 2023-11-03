@@ -1,0 +1,19 @@
+.sizes-wrapper {
+  display: flex;
+}
+
+.sizes {
+  margin-left: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+
+  & div {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+  }
+}

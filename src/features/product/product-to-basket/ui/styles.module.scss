@@ -1,0 +1,31 @@
+.product-to-basket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 0.875rem;
+}
+
+.product-to-basket__shop-btn {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #4172dc;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.product-to-basket__to-basket-btn {
+  display: flex;
+  max-height: 52px;
+  min-height: 52px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  text-transform: uppercase;
+}

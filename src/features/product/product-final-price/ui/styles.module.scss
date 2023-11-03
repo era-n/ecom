@@ -1,0 +1,21 @@
+.product-final-price {
+  margin: 24px 0;
+  border-radius: 6px;
+  background-color: #e9e9e9;
+  padding: 0.75rem 1.5rem;
+
+  & ~ p {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+.product-final-price__info {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: #555555;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 0.5rem;
+}

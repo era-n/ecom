@@ -1,0 +1,52 @@
+@use "@styles/breakpoints" as *;
+
+.product-details {
+  padding: 0 1.25rem;
+
+  @include tablet {
+    padding: 1.25rem 0;
+  }
+}
+
+.product-details__tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  text-transform: uppercase;
+  color: #9d9d9d;
+  padding: 1rem 0;
+
+  & > span:hover {
+    color: #262626;
+    cursor: pointer;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media only screen and (max-width: 758px) {
+    display: block;
+  }
+}
+
+.product-details__tab {
+  display: flex;
+  gap: 20px;
+  padding-top: 1.25rem;
+
+  & div {
+    flex: 1;
+  }
+}
+
+.heading {
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+  color: #262626;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: #555555;
+}

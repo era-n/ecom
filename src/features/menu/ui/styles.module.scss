@@ -1,0 +1,103 @@
+@use "@styles/breakpoints" as *;
+
+.menu-wrapper {
+  height: 100%;
+  background-color: #262626;
+  padding: 0.75rem 0;
+
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.menu {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  color: white;
+
+  @include tablet {
+    width: 900px;
+  }
+
+  @include desktop {
+    width: 1370px;
+  }
+}
+
+.menu__categories {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    justify-content: initial;
+    gap: 44px;
+  }
+}
+
+.menu__categories-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+}
+
+.menu__currencies {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+
+  & span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.menu__sales-wrapper {
+  display: none;
+  flex: 1 1 70%;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid #7b7b7b;
+  border-right: 1px solid #7b7b7b;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.menu__sales {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: #c4c4c4;
+}
+
+.menu__helpers {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.cart-count {
+  border-radius: 50%;
+  padding: 2px 8px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: #3dc47e;
+}

@@ -1,0 +1,15 @@
+@use "@styles/breakpoints" as *;
+
+.cards {
+  margin: 0 auto 90px auto;
+  width: 95%;
+  padding-top: 0.75rem;
+
+  @include tablet {
+    width: 900px;
+  }
+
+  @include desktop {
+    width: 1370px;
+  }
+}

@@ -1,0 +1,52 @@
+@use "@styles/breakpoints" as *;
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 95%;
+
+  @include tablet {
+    width: 900px;
+  }
+  @include desktop {
+    width: 1370px;
+    padding-top: 1rem;
+  }
+}
+
+.nav {
+  display: none;
+  flex: 1;
+  align-items: center;
+  padding: 0.75rem;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.nav__links {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+
+  @include desktop {
+    flex: 1 1 auto;
+  }
+}
+
+.nav__socials {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  height: 20px;
+  gap: 20px;
+
+  @include tablet {
+    flex: 1;
+  }
+}

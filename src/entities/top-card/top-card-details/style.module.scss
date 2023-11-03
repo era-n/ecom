@@ -1,0 +1,56 @@
+.top-card-details {
+  padding: 1.25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-card-details__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & div > p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+}
+
+.top-card-details__icon {
+  min-height: 18px;
+  max-width: 20px;
+}
+
+.top-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & span {
+    font-size: 0.75rem;
+    color: #555555;
+  }
+}
+
+.top-card-details__price {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #ff2e00;
+}
+
+.top-card-details__old-price {
+  margin-left: 12px;
+  font-size: 0.875rem;
+  color: #555555;
+  text-decoration: line-through;
+}
+
+.top-card-details__discount {
+  margin-left: 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #ff2e00;
+}

@@ -1,0 +1,35 @@
+@use "@styles/breakpoints" as *;
+
+.product-wrapper {
+  display: grid;
+  grid-template-rows: 580px auto auto;
+  gap: 4px;
+
+  @include tablet {
+    grid-template-columns: 122px minmax(280px, auto) minmax(345px, 1fr);
+    grid-template-rows: 700px;
+  }
+}
+
+.product {
+  padding: 1.25rem;
+
+  @include tablet {
+    padding: 20px 0 0 16px;
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: bold;
+}
+
+.desktop {
+  display: block;
+
+  @media only screen and (max-width: 758px) {
+    display: none;
+  }
+}

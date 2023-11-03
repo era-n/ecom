@@ -1,0 +1,35 @@
+.trending-card-details-wrapper {
+  max-height: 92px;
+  background-color: #262626;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.trending-card-details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  color: white;
+}
+
+.trending-card-details__product-type {
+  color: #c4c4c4;
+}
+
+.trending-card-details__button {
+  display: flex;
+  height: 44px;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 12px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  padding: 0 1rem;
+
+  & span {
+    font-weight: bold;
+    color: #d9d9d9;
+  }
+}

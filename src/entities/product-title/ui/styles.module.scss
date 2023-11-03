@@ -1,0 +1,20 @@
+.product-title-wrapper {
+  position: relative;
+}
+
+.product-title {
+  padding: 0.75rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.product-title__price {
+  font-size: 1.5rem;
+}
+
+.product-title__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
