@@ -20,18 +20,18 @@ export default function CardItem({
   } = product;
   const [quantity, setQuantity] = useState<number>(temp ?? 1);
 
-  const removeFromCart = (e) => {
+  const removeFromCart = (e: any) => {
     e.preventDefault();
     store.removeOrder(id);
   };
 
-  const addQuantity = (e) => {
+  const addQuantity = (e: any) => {
     e.preventDefault();
     store.updateQuantity(id, "inc");
     setQuantity((prev) => prev + 1);
   };
 
-  const reduceQuantity = (e) => {
+  const reduceQuantity = (e: any) => {
     e.preventDefault();
     store.updateQuantity(id, "dec");
     setQuantity((prev) => (prev < 2 ? 1 : prev - 1));
